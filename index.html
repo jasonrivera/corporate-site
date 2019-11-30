@@ -1,112 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Corporate Site</title>
-    <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/global.css">
-    <link rel="stylesheet" href="CSS/homepage.css">  
+    <link rel="stylesheet" href="CSS/homepage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
+
 <body>
-    <!--Main Container-->
-    <div class="main-container">
-        <!--Navigation-->
-        <nav class="navbar">
-            <h2 class="navbar-brand">Business</h2>
-            <ul class="navbar-nav-menu">
-                <li class="nav-menu-item"><a href="#">About</a></li>
-                <li class="nav-menu-item"><a href="#">Work</a></li>
-                <li class="nav-menu-item"><a href="#">Team</a></li>
-                <li class="nav-menu-item"><a href="#">Blog</a></li>
-                <li class="nav-menu-item"><a href="#">Contact</a></li>
-            </ul>
-            <button class="navbar-btn" type="button">Contact Us</button>
-        </nav>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <h2 class="title">Business</h2>
+            </a>
 
-        <!--Header-->
-        <header class="main-header">
-            <div class="header-intro">
-                <h1 class="header-intro-title">Grow Your Business</h1>
-                <p class="header-intro-subtitle">Give your business a boost with a beautifully crafted homepage.</p>
-                <button class="header-intro-btn" type="button">Learn More</button>
-            </div>
-        </header>
-
-        <!--About Section-->
-        <section class="about">
-            <!--Intro-->
-            <p class="about-subtitle">What We Believe In</p>
-            <h2 class="about-title">Grow your business, establish your brand, and put your customers first.</h2>
-            <hr>
-
-        <!--Who We Are-->
-        <div class="info-container">
-            <div class="info-block">
-                <p class="info-subtitle">About</p>
-                <h3 class="info-title">Who We Are</h3>
-                <p class="info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, harum ipsum ipsa quos hic, eum dolor, atque quisquam velit impedit perspiciatis corporis officiis est deserunt magnam nostrum quis saepe sint.</p>
-                <button class="info-btn" type="button">Learn More</button>
-            </div>
-            <img class="info-img-right" src="#" alt="">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
 
-        <!--What We Do-->
-        <div class="info-container">
-            <img class="info-img-left" src="#" alt="">
-            <div class="info-block">
-                <p class="info-subtitle">Team</p>
-                <h3 class="info-title">What We Do</h3>
-                <p class="info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae architecto vitae quam praesentium molestiae incidunt eum quisquam? Nam suscipit voluptates alias est voluptatum aspernatur. Doloribus quam ut quasi laborum aspernatur?</p>
-                <button class="info-btn" type="button">Learn More</button>
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="#" class="navbar-item">
+                    Home
+                </a>
+
+                <a href="#" class="navbar-item">
+                    About
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            Services
+                        </a>
+                        <a class="navbar-item">
+                            Our Team
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                            Log in
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-        </section>
-
-        <!--Blog Section-->
-        <section class="blog-section">
-            <p class="blog-section-subtitle">About Us</p>
-            <h2 class="blog-section-title">Company News</h2>
-
-            <!--Blog Posts-->
-            <div class="blog-container">
-                <div class="blog-preview-container">
-                    <h3 class="post-title">10 Quick Tips About Blogging</h3>
-                    <p class="post-date">Nov 27, 2019</p>
-                    <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde beatae, deleniti sunt nulla vitae maxime veritatis consequuntur modi a doloribus at officiis voluptas tenetur cum nihil repellat. Beatae, consectetur animi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cumque perspiciatis neque! Ipsa hic at perferendis suscipit necessitatibus provident minima vel natus eius, commodi dolore sequi, laboriosam optio iusto excepturi.</p>
-                    <a href="#" class="read-more">Read more</a>
+    </nav>
+    <section class="hero is-link is-fullheight-with-navbar has-background">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1 has-text-centered">Grow Your Business</h1>
+                <p class="is-capitalized has-text-centered">Give your business a boost with a beautifully crafted
+                    homepage</p>
+                <button class="button is-primary is-medium is-uppercase hero-btn">Learn more</button>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container second-section-container divider">
+            <p class="is-uppercase subtitle is-size-7 has-text-grey-light has-text-centered section-subtitle">What we
+                believe in</p>
+            <h2 class="title has-text-weight-light is-capitalized has-text-centered">
+                Grow your business, establish your brand, and put your customers first
+            </h2>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4 align-self">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="subtitle is-uppercase is-size-7">About</p>
+                            <p class="title is-capitalized has-text-weight-normal">
+                                Who we are
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nam maiores nostrum
+                                laudantium sunt non minima beatae repellat natus perspiciatis, quia velit, aliquid a
+                                necessitatibus est debitis vitae officia! Totam. Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Aperiam perspiciatis suscipit eaque repudiandae eligendi sint sed
+                                autem. Mollitia minus provident architecto nemo porro, hic odio id voluptatibus
+                                distinctio iusto repellendus?
+                            </p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <span>
+                                    View on <a href="#">Twitter</a>
+                                </span>
+                            </p>
+                            <p class="card-footer-item">
+                                <span>
+                                    Share on <a href="#">Facebook</a>
+                                </span>
+                            </p>
+                        </footer>
+                    </div>
                 </div>
-
-                <div class="blog-preview-container">
-                    <h3 class="post-title">15 Best Blogs To Follow About Web Design</h3>
-                    <p class="post-date">Nov 27, 2019</p>
-                    <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde beatae, deleniti sunt nulla vitae maxime veritatis consequuntur modi a doloribus at officiis voluptas tenetur cum nihil repellat. Beatae, consectetur animi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cumque perspiciatis neque! Ipsa hic at perferendis suscipit necessitatibus provident minima vel natus eius, commodi dolore sequi, laboriosam optio iusto excepturi.</p>
-                    <a href="#" class="read-more">Read more</a>
-                </div>
-
-                <div class="blog-preview-container">
-                    <h3 class="post-title">7 of the Best Examples of Beautiful Blog Design</h3>
-                    <p class="post-date">Nov 27, 2019</p>
-                    <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde beatae, deleniti sunt nulla vitae maxime veritatis consequuntur modi a doloribus at officiis voluptas tenetur cum nihil repellat. Beatae, consectetur animi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cumque perspiciatis neque! Ipsa hic at perferendis suscipit necessitatibus provident minima vel natus eius, commodi dolore sequi, laboriosam optio iusto excepturi.</p>
-                    <a href="#" class="read-more">Read more</a>
+                <div class="column is-8">
+                    <figure class="image is-16by9">
+                        <img class="img-in-column" src="images/biz-1.jpg">
+                    </figure>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!--CTA Section-->
-        <section class="cta-section">
-            <div class="cta-info-container">
-                <h2 class="cta-title">Grow Your Business</h2>
-                <p class="cta-text">Today is the day to build the business of your dreams. Share your mission with the world - and blow your customers away.</p>
-                <button class="cta-btn" type="button">Start Now</button>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8 text-column">
+                    <figure class="image is-16by9">
+                        <img class="img-in-column" src="images/biz-2.jpg">
+                    </figure>
+                </div>
+                <div class="column is-4 align-self">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="subtitle is-uppercase is-size-7">Team</p>
+                            <p class="title is-capitalized has-text-weight-normal">
+                                What we do
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, nam maiores nostrum
+                                laudantium sunt non minima beatae repellat natus perspiciatis, quia velit, aliquid a
+                                necessitatibus est debitis vitae officia! Totam. Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Aperiam perspiciatis suscipit eaque repudiandae eligendi sint sed
+                                autem. Mollitia minus provident architecto nemo porro, hic odio id voluptatibus
+                                distinctio iusto repellendus?
+                            </p>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <span>
+                                    View on <a href="#">Twitter</a>
+                                </span>
+                            </p>
+                            <p class="card-footer-item">
+                                <span>
+                                    Share on <a href="#">Facebook</a>
+                                </span>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <footer class="main-footer">
-            <p class="footer-text">Designed & Developed by: Jason Rivera - 2019</p>
-        </footer>
-
-    </div> <!--./main-container-->
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h2 class="title has-text-centered has-text-weight-normal">Our Services</h2>
+            <div class="columns">
+                <div class="column is-3  has-text-centered">
+                    <span class="icon">
+                        <i class="fas fa-chart-bar is-large has-text-info"></i>
+                    </span>
+                    <h3 class="title is-capitalized has-text-weight-normal">Marketing</h3>
+                    <p class="services-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consequatur nesciunt a iure alias
+                        odio vitae atque quasi numquam eius, labore deserunt ipsam est provident dolor laborum natus
+                        repellat? Dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facilis
+                        ipsa nesciunt qui, dolorem, beatae, ab rerum atque provident aliquam magni enim quae tempora
+                        commodi. Quod aperiam laborum possimus provident!</p>
+                </div>
+                <div class="column is-3 has-text-centered">
+                    <span class="icon">
+                        <i class="fas fa-building is-large has-text-info"></i>
+                    </span>
+                    <h3 class="title is-capitalized has-text-weight-normal">Team Training</h3>
+                    <p class="services-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consequatur nesciunt a iure alias
+                        odio vitae atque quasi numquam eius, labore deserunt ipsam est provident dolor laborum natus
+                        repellat? Dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facilis
+                        ipsa nesciunt qui, dolorem, beatae, ab rerum atque provident aliquam magni enim quae tempora
+                        commodi. Quod aperiam laborum possimus provident!</p>
+                </div>
+                <div class="column is-3 has-text-centered">
+                    <span class="icon">
+                        <i class="fas fa-file-invoice-dollar is-large has-text-info"></i>
+                    </span>
+                    <h3 class="title is-capitalized has-text-weight-normal">Finance</h3>
+                    <p class="services-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consequatur nesciunt a iure alias odio
+                        vitae atque quasi numquam eius, labore deserunt ipsam est provident dolor laborum natus repellat?
+                        Dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facilis ipsa nesciunt
+                        qui, dolorem, beatae, ab rerum atque provident aliquam magni enim quae tempora commodi. Quod aperiam
+                        laborum possimus provident!</p>
+                </div>
+                <div class="column is-3 has-text-centered"> <span class="icon">
+                        <i class="fas fa-globe is-large has-text-info"></i>
+                    </span>
+                    <h3 class="title is-capitalized has-text-weight-normal">Global Network</h3>
+                    <p class="services-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum consequatur nesciunt a iure alias odio
+                        vitae atque quasi numquam eius, labore deserunt ipsam est provident dolor laborum natus repellat?
+                        Dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facilis ipsa nesciunt
+                        qui,
+                        dolorem, beatae, ab rerum atque provident aliquam magni enim quae tempora commodi. Quod aperiam
+                        laborum
+                        possimus provident!</p>
+                </div>
+            </div> 
+        </div>
+        </div>
+    </section>
 </body>
+
 </html>

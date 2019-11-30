@@ -1,1 +1,9 @@
 /* GLOBAL STYLES */
+
+.divider {
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.align-self {
+    align-self: center;
+}
