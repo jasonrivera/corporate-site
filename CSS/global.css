@@ -1,4 +1,15 @@
 /* GLOBAL STYLES */
+html * {
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-link.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover {
+    color: #16657F !important;
+}
+
+h2.title, h3.title, p.title {
+    color: #114B5F;
+}
 
 .divider {
     border-bottom: 1px solid #f9f9f9;
@@ -6,4 +17,23 @@
 
 .align-self {
     align-self: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-bg-color {
+    background-color: #114B5F;
+}
+
+footer.card-footer p.card-footer-item span a {
+    color: #16657F;
+}
+
+footer.card-footer p.card-footer-item span a:hover {
+    text-decoration: underline;
 }

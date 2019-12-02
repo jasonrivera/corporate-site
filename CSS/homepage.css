@@ -1,3 +1,11 @@
+a.button.signup-btn-bg {
+    background-color: #114B5F;
+}
+
+a.button.signup-btn-bg:hover {
+    background-color: #707078;
+}
+
 .hero {
     background-image: linear-gradient(
         rgba(20,20,20, .5), 
@@ -12,9 +20,14 @@
     flex-direction: column;
 }
 
-.hero-btn {
+.button.is-medium.is-uppercase.hero-btn.hero-btn {
     align-self: center;
     margin: 1em 0;
+    background-color: #16657F;
+}
+
+.button.is-medium.is-uppercase.hero-btn.hero-btn:hover {
+    background-color: #707078;
 }
 
 .section .container p.section-subtitle {
@@ -37,4 +50,47 @@
 
 .section .container .columns .column .services-text {
     padding-bottom: 2em;
+}
+
+.image.is-128x128 {
+    margin: 0 auto 15px auto;
+}
+
+h2.title.is-capitalized.has-text-weight-normal.has-text-centered.mb {
+    margin-bottom: 6rem;
+}
+
+.team-job-title {
+    margin: 1rem 0;
+}
+
+.social-icons-box {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-top: 1em;
+}
+
+.button.is-link.submit-btn-bg {
+    background-color: #114B5F;
+}
+
+.button.is-link.submit-btn-bg:hover {
+    background-color: #707078;
+}
+
+.button.is-link.is-light.cancel-btn-text {
+    color: #114B5F;
+}
+
+.button.is-link.is-light.cancel-btn-text:hover {
+    color: #707078;
+}
+
+a .fa-facebook-f:hover, a .fa-linkedin-in:hover, a .fa-twitter:hover, a .fa-instagram:hover {
+    color: #707078 !important;
+}
+
+footer.footer {
+    background-color: #114B5F;
 }
