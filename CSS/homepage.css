@@ -9,7 +9,7 @@ a.button.signup-btn-bg:hover {
 .hero {
     background-image: linear-gradient(
         rgba(20,20,20, .5), 
-        rgba(20,20,20, .5)),url("/corporate-site/images/biz-3.jpg");
+        rgba(20,20,20, .5)),url("../images/biz-3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
